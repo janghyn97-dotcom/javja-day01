@@ -7,9 +7,15 @@ public class Calculator {
         int a = sc.nextInt();
         System.out.print("두 번째 수: ");
         int b = sc.nextInt();
-        System.out.println(a + " + " + b + " = " + (a + b));
+#System.out.println(a + " + " + b + " = " + (a + b));
         int max = a > b ? a : b;
         System.out.println(max);
+	if (b != 0) {
+		System.out.println(a + " / " + b + " = " + (a / (double) b));
+	}
+	else {
+		System.out.println("0으로 나눌 수 없습니다.");
+
         if (b != 0 && a / b > 1) {
             System.out.println("몫이 1보다 큽니다");
         }
